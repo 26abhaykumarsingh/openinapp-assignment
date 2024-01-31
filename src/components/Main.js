@@ -83,7 +83,7 @@ function Main() {
             <div className="uploadBtnText">Upload</div>
           </div>
         </div>
-        {extractedData && <Table></Table>}
+        {extractedData && <Table data={extractedData}></Table>}
       </div>
     </div>
   );
