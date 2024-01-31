@@ -46,14 +46,14 @@ function Home() {
                 placeholder="Enter your password"
               ></input>
               <div className="forgotPass">
-                <a href="">Forgot Password?</a>
+                <a href="#">Forgot Password?</a>
               </div>
               <Link to="/main">
                 <button className="submitBtn">Sign In</button>
               </Link>
             </div>
             <div className="formBottom">
-              Don't have an account? <a href="">Register here</a>
+              Don't have an account? <a href="#">Register here</a>
             </div>
           </div>
         </div>

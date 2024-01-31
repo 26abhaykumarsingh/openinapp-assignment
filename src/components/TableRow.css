@@ -49,12 +49,6 @@ select {
   padding: 5px;
 }
 
-.downIcon {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-
 select::-ms-expand {
   display: none;
 }

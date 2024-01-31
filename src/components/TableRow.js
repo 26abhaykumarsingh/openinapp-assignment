@@ -23,7 +23,9 @@ function TableRow({ id, link, prefix, tags }) {
     <div className="TableRow">
       <div className="tableRowData tableRowDataId">{id}</div>
       <div className="tableRowData tableRowDataLinks">
-        <a href={link}>{link}</a>
+        <a href={`https://${link}`} target="_blank">
+          {link}
+        </a>
       </div>
       <div className="tableRowData tableRowDataPrefix">{prefix}</div>
       <div className="tableRowData tableRowDataTags">

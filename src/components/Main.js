@@ -18,11 +18,6 @@ function Main() {
     console.log(droppedFiles[0]);
   };
 
-  const handleFileInput = (event) => {
-    const selectedFiles = event.target.files;
-    setFile(selectedFiles);
-  };
-
   const handleDragOver = (event) => {
     event.preventDefault();
   };
@@ -75,7 +70,7 @@ function Main() {
             <div className="excelIcon"></div>
             {!file && (
               <div className="dropAreaText">
-                Drop your excel sheet here or <a href="">browse</a>
+                Drop your excel sheet here or <a href="#">browse</a>
               </div>
             )}
             {file && (
@@ -87,7 +82,7 @@ function Main() {
               </div>
             )}
           </div>
-          <div className="uploadBtn" onClick={handleFile}>
+          <div className="uploadBtn" onClick={() => file && handleFile()}>
             <div className="uploadBtnIcon"></div>
             <div className="uploadBtnText">Upload</div>
           </div>

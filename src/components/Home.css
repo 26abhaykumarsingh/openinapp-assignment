@@ -68,6 +68,7 @@
 .socialLogo {
   height: 40px;
   width: 40px;
+  cursor: no-drop;
 }
 
 .github {
@@ -132,6 +133,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 15px;
+  cursor: no-drop;
 }
 
 .formBtn {
@@ -199,6 +201,7 @@ input {
   color: #346bd4;
   margin-top: 5px;
   margin-bottom: 20px;
+  cursor: no-drop;
 }
 
 .submitBtn {
@@ -226,6 +229,7 @@ input {
 a {
   color: #346bd4;
   text-decoration: none;
+  cursor: no-drop;
 }
 
 button {
