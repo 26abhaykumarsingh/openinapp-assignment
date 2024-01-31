@@ -52,3 +52,33 @@
 
 .selecttags {
 }
+
+/* media queries */
+
+@media screen and (max-width: 1070px) {
+  .Table {
+    margin-top: 40px;
+    width: 100%;
+    padding: 50px 40px;
+  }
+}
+@media screen and (max-width: 945px) {
+  .Table {
+    overflow: scroll;
+    padding: 30px 15px;
+    width: 96%;
+  }
+
+  .tableMain {
+    width: max(657px, 100%);
+  }
+
+  .tableHeading {
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1.5fr 1.7fr 3.5fr;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}

@@ -1,12 +1,16 @@
 import React from "react";
 import "./Sidebar.css";
 
-function Sidebar() {
+function Sidebar({ isMenuVisible, setIsMenuVisible }) {
   return (
-    <div className="Sidebar">
+    <div className={`Sidebar ${isMenuVisible && "menuVisible"}`}>
       <div className="sidebarHeader">
         <div className="sidebarLogo"></div>
         <div className="sidebarHeaderTitle">Base</div>
+        <div
+          className={`${isMenuVisible && "menuCrossIcon"}`}
+          onClick={() => setIsMenuVisible(false)}
+        ></div>
       </div>
       <div className="sidebarItems">
         <div className="sidebarItem">

@@ -8,6 +8,7 @@ import Table from "./Table";
 function Main() {
   const [file, setFile] = useState(null);
   const [extractedData, setExtractedData] = useState(null);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   const handleDrop = (event) => {
     event.preventDefault();
@@ -54,8 +55,16 @@ function Main() {
 
   return (
     <div className="Main">
-      <Sidebar></Sidebar>
+      <Sidebar
+        isMenuVisible={isMenuVisible}
+        setIsMenuVisible={setIsMenuVisible}
+      ></Sidebar>
       <div className="mainContainer">
+        <div className="mobileHeader">
+          <div className="hamIcon" onClick={() => setIsMenuVisible(true)}></div>
+          <div className="mobileLogo"></div>
+          <div className="mobileTitle">Base</div>
+        </div>
         <div className="mainHeader">Upload CSV</div>
         <div className="fileUploadContainer">
           <div
