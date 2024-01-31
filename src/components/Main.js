@@ -43,6 +43,7 @@ function Main() {
 
       console.log(jsonData);
       setExtractedData(jsonData);
+      setFile(null);
     };
 
     reader.readAsArrayBuffer(selectedFile);
